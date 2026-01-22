@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#2563eb">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Performans Dağılım Robotu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; -webkit-tap-highlight-color: transparent; }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+
+      @media print {
+        /* Hide everything by default */
+        body { background-color: white !important; }
+        header, footer, .no-print, button, .step-indicator, .dropdown-menu {
+          display: none !important;
+        }
+        
+        /* Ensure the main container doesn't have max-width or padding that shrinks the table */
+        main {
+          max-width: 100% !important;
+          width: 100% !important;
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+
+        /* Result table specific print fixes */
+        .print-only-header {
+          display: block !important;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        .print-table-container {
+          box-shadow: none !important;
+          border: none !important;
+          overflow: visible !important;
+        }
+
+        table {
+          width: 100% !important;
+          border-collapse: collapse !important;
+          font-size: 8pt !important;
+        }
+
+        th, td {
+          border: 1px solid #000 !important;
+          padding: 4px !important;
+          white-space: normal !important;
+          background-color: transparent !important;
+          color: black !important;
+          position: static !important; /* Remove sticky positioning */
+          box-shadow: none !important;
+        }
+
+        tr {
+          page-break-inside: avoid;
+        }
+
+        /* Show the signature block only during print */
+        .print-signature-block {
+          display: flex !important;
+          justify-content: flex-end;
+          margin-top: 40px;
+          padding-right: 20px;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+
+      /* Non-print defaults */
+      .print-only-header, .print-signature-block {
+        display: none;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "xlsx": "https://esm.sh/xlsx-js-style@1.2.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "jspdf-autotable": "https://esm.sh/jspdf-autotable@3.8.2"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-a9LTp_Po.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
